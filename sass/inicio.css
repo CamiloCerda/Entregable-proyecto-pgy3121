@@ -27,7 +27,8 @@ main {
       color: #ffffff; }
     main .formuInicio .opciones a {
       color: #ffffff;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-right: 20px; }
       main .formuInicio .opciones a:hover {
         transition: all 0.3s ease;
         color: #777777; }
