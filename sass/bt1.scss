@@ -1,0 +1,264 @@
+body {
+    //background: url(../img/tdm/galeria/ep_naturalblack.png);
+    background: url(../img/tdm/galeria/Sports.png);
+}
+
+
+
+.fas {
+    margin-right: 10px;
+    &.der {
+        margin-left: 20px;
+    }
+}
+
+.fas, .titulo {
+    font-size: 1.5em;
+}
+
+.cajarrss {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    h2 {
+        font-style: italic;
+    }
+    i {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+}
+
+.iconos {
+    padding: 50px 0;
+    a {
+        i {
+            font-size: 30px;
+            color: #615d5d;
+        }
+    }
+}
+
+.italica {
+    font-style: italic;
+}
+
+aside {
+    border: 1px solid rgb(218, 218, 218);
+    .ranking {
+        background-color: #dadada;
+        margin: 10px auto;
+        padding: 20px;
+        h4 {
+            font-size: 17px;
+            font-weight: 500;
+        }
+        ol {
+            li {
+                border-bottom: 1px solid rgb(190, 190, 190);
+            }
+        }
+    }
+}
+
+.colorFondo {
+    background-color: #cacaca;
+    //color: #3b3b3b;
+}
+
+.jugmes {
+    background-color: #cacaca;
+    color: #3b3b3b;
+    .titulo {
+        i {
+            margin: 0 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+        h5 {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    /* img {
+        padding: 10px;
+    } */
+    p, a {
+        color: #3b3b3b;
+    }
+    p {
+        text-align: justify;
+    }
+    a:hover {
+        color: #000000;
+        transition: all .5s ease;
+    }
+}
+
+.contenedor {
+    background-color: #252525;
+    .sliderJugadores {
+        width: 96%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .titulo {
+            align-self: flex-start;
+            margin-top: 50px;
+            h3 {
+                color: #727171;
+                //font-size: 2em;
+                padding: 0 20px;
+                display: inline-block;
+            }
+            i {
+                color: #b4b4b4;
+            }
+        }
+        .subContenedor {
+            width: 89%;
+            margin: 20px auto 40px auto;
+            display: flex;
+            overflow: hidden;
+            .jugador {
+                padding: 5px;
+                opacity: .7;
+                transition: all 1s ease;           
+                &:hover {
+                    opacity: 1;
+                }
+                .descripcion {
+                    text-align: center;
+                    background-color: #ffffff;
+                    a {
+                        color: #727171;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 18px;
+                        &:hover {
+                            transition: color .3s ease;
+                            color: #161616;
+                        }
+                        &:active {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .flechas {
+            display: flex;
+            .caja {
+                i {
+                    font-size: 2.5em;
+                    color: #615d5d;
+                    margin-bottom: 50px;
+                    &.fa-chevron-left {
+                        margin-right: 20px;
+                    }
+                    &.fa-chevron-right {
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:active {
+                        opacity: .7;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.tituloFormulario {
+    h1 {
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+
+.razonesContacto {
+    //padding-top: 20px;
+    p {
+        text-align: center;
+        padding-top: 20px;
+    }
+    ul {
+        //text-align: center;
+        font-style: italic;
+        list-style: none;
+        list-style:inside;
+        li {
+            font-size: 15px;
+        }
+        &.destacar {
+            font-size: 18px;
+        }
+    }
+    
+}
+
+.formularioContacto {
+    background-color: #dadada;
+    padding: 20px;
+    border-radius: 10px;
+    input {
+        &.nombre {
+            width: 200%;
+        }
+    }
+}
+
+footer {
+    .descripcion {
+        text-align: justify;
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            color: #615d5d;
+            //text-align: justify;
+        }
+    }
+    .gris {
+        color: #615d5d;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .logos {
+        display: flex;
+        justify-content: center;
+        //align-items: center;
+        a {
+            img {
+                padding-top: 50px;
+        
+                width: 100%;
+                //margin: auto;
+                //float: left;
+            }
+        }
+    }
+    .ubicacion {
+        color: #615d5d;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    .frase {
+        color: #615d5d;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 40px 0;
+        text-align: center;
+    }
+    iframe {
+        margin-bottom: 20px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
