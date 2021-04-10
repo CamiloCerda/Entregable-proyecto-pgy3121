@@ -1,0 +1,73 @@
+body {
+    background: url(../img/fondos/black_denim.png);
+}
+
+header {
+    &.titulo {
+        font-family: 'Dancing Script';
+        color: #ffffff;
+    }
+    i {
+        margin: 0 20px;
+        font-size: 30px;
+    }
+}
+
+main {
+    width: 100%;
+    .sliderInicial {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 50%;
+        margin: auto;
+    }
+
+    .formuInicio {
+        width: 30%;
+        margin: auto;
+        background-color: #313131;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 50px;
+        
+        label {
+            color: #ffffff;
+        }
+        .opciones {
+            a {
+                color: #ffffff;
+                text-decoration: none;
+                &:hover {
+                    transition: all 0.3s ease;
+                    color: #777777;
+                }
+                &:active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    main {
+        .sliderInicial {
+            width: 70%;
+        }
+        .formuInicio {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    main {
+        .sliderInicial {
+            width: 90%;
+        }
+        .formuInicio {
+            width: 80%;
+        }
+    }
+}
