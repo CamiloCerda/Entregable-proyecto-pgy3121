@@ -1,5 +1,6 @@
 body {
-  background: url(../img/fondos/white_leather.png); }
+  background: url(../img/fondos/black_denim.png);
+  /* background: url(../img/fondos/white_leather.png); */ }
 
 header .tituloHeader {
   font-family: 'Dancing Script';
@@ -19,26 +20,50 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-item {
 .italica {
   font-style: italic; }
 
-main .cajaRedes {
-  background-color: #ffffff;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 10px; }
-  main .cajaRedes .cajarrss {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    color: #616161; }
-    main .cajaRedes .cajarrss h2 {
-      font-style: italic; }
-    main .cajaRedes .cajarrss i {
-      margin-left: 10px;
-      font-size: 30px; }
-  main .cajaRedes .iconos {
-    padding: 50px 0; }
-    main .cajaRedes .iconos a i {
-      font-size: 30px;
-      color: #616161; }
+.caruselFotos {
+  background: url(../img/fondos/white_leather.png);
+  border-radius: 10px;
+  padding: 20px; }
+
+main {
+  /*----------------------------------------*/
+  /*----------------------------------------*/ }
+  main .cajaRedes {
+    background: url(../img/fondos/white_leather.png);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px; }
+    main .cajaRedes .cajarrss {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      color: #3b3b3b; }
+      main .cajaRedes .cajarrss h2 {
+        font-style: italic; }
+      main .cajaRedes .cajarrss i {
+        margin-left: 10px;
+        font-size: 30px; }
+    main .cajaRedes .iconos {
+      padding: 50px 0; }
+      main .cajaRedes .iconos a i {
+        font-size: 30px;
+        color: #3b3b3b; }
+  main .noticiaPrincipal {
+    background: url(../img/fondos/black_denim.png);
+    border: 1px solid #ffffff; }
+    main .noticiaPrincipal .probando h5 {
+      padding-bottom: 5px;
+      border-bottom: 2px solid #620001; }
+  main .tresnoticias .card {
+    background-color: #a33c1f; }
+    main .tresnoticias .card .card-body {
+      color: #FDF0ED; }
+      main .tresnoticias .card .card-body h5 {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #FDF0ED; }
+  main .dosnoticias .card .card-body h5 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #413c8b; }
 
 aside {
   border: 1px solid #dadada; }
@@ -52,9 +77,9 @@ aside {
     aside .ranking ol li {
       border-bottom: 1px solid #bebebe; }
   aside .colorFondo {
-    background-color: #cacaca; }
+    background: url(../img/fondos/white_leather.png); }
   aside .jugmes {
-    background-color: #cacaca;
+    background: url(../img/fondos/white_leather.png);
     color: #3b3b3b; }
     aside .jugmes .titulo i {
       margin: 0 10px;
@@ -71,8 +96,12 @@ aside {
       color: #000000;
       transition: all .5s ease; }
 
+.bordedivisor {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b4b4b4; }
+
 .contenedor {
-  background-color: #252525; }
+  background: url(../img/fondos/black_denim.png); }
   .contenedor .sliderJugadores {
     width: 96%;
     margin: auto;
@@ -97,10 +126,10 @@ aside {
       overflow: hidden; }
       .contenedor .sliderJugadores .subContenedor .jugador {
         padding: 5px;
-        opacity: .7;
-        transition: all 1s ease; }
-        .contenedor .sliderJugadores .subContenedor .jugador:hover {
-          opacity: 1; }
+        transition: all 1s ease;
+        /* &:hover {
+            opacity: 1;
+        } */ }
         .contenedor .sliderJugadores .subContenedor .jugador .descripcion {
           text-align: center;
           background-color: #ffffff; }
@@ -129,6 +158,9 @@ aside {
         .contenedor .sliderJugadores .flechas .caja i:active {
           opacity: .7; }
 
+.contenedorFormulario {
+  background: url(../img/fondos/white_leather.png); }
+
 .tituloFormulario h1 {
   padding-top: 50px;
   text-align: center; }
@@ -152,42 +184,52 @@ aside {
   .formularioContacto input.nombre {
     width: 200%; }
 
-footer .iconos {
-  padding: 50px 0; }
-  footer .iconos a i {
-    font-size: 30px;
-    color: #616161; }
-footer .descripcion {
-  text-align: justify; }
-  footer .descripcion h3 {
+footer {
+  background: url(../img/fondos/black_denim.png); }
+  footer .iconos {
+    padding: 50px 0; }
+    footer .iconos a i {
+      font-size: 30px;
+      color: #616161; }
+  footer .descripcion {
+    text-align: justify; }
+    footer .descripcion h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #615d5d; }
+  footer .gris {
+    color: #615d5d;
+    margin-bottom: 15px;
+    margin-top: 15px; }
+  footer .logos {
+    display: flex;
+    justify-content: center; }
+    footer .logos a img {
+      padding-top: 50px;
+      width: 100%; }
+  footer .ubicacion {
+    color: #615d5d;
     font-size: 16px;
     font-weight: 400;
-    color: #615d5d; }
-footer .gris {
-  color: #615d5d;
-  margin-bottom: 15px;
-  margin-top: 15px; }
-footer .logos {
-  display: flex;
-  justify-content: center; }
-  footer .logos a img {
-    padding-top: 50px;
-    width: 100%; }
-footer .ubicacion {
-  color: #615d5d;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 20px 0; }
-footer .frase {
-  color: #615d5d;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 40px 0;
-  text-align: center; }
-footer iframe {
-  margin-bottom: 20px;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 5px; }
+    margin: 20px 0; }
+  footer .frase {
+    color: #615d5d;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 40px 0;
+    text-align: center; }
+  footer iframe {
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px; }
+
+@media screen and (max-width: 800px) {
+  main .tresnoticias .card {
+    background-color: #FDF0ED; }
+    main .tresnoticias .card .card-body {
+      color: #333333; }
+      main .tresnoticias .card .card-body h5 {
+        border-bottom: 2px solid #333333; } }
 
 /*# sourceMappingURL=bt1.css.map */

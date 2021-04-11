@@ -1,5 +1,6 @@
 body {
-    background: url(../img/fondos/white_leather.png);
+    background: url(../img/fondos/black_denim.png);
+    /* background: url(../img/fondos/white_leather.png); */
 }
 
 header {
@@ -39,9 +40,15 @@ header {
     font-style: italic;
 }
 
+.caruselFotos {
+    background: url(../img/fondos/white_leather.png);
+    border-radius: 10px;
+    padding: 20px;
+}
+
 main {
     .cajaRedes {
-        background-color: #ffffff;
+        background: url(../img/fondos/white_leather.png);
         margin: 20px 0;
         padding: 20px;
         border-radius: 10px;
@@ -49,8 +56,7 @@ main {
             display: flex;
             justify-content: start;
             align-items: center;
-            color: #616161;
-            //background-color: #ffffff;
+            color: #3b3b3b;//616161
             h2 {
                 font-style: italic;
             }
@@ -61,11 +67,46 @@ main {
         }
         .iconos {
             padding: 50px 0;
-            //background-color: #ffffff;
             a {
                 i {
                     font-size: 30px;
-                    color: #616161;
+                    color: #3b3b3b;
+                }
+            }
+        }
+    }
+    .noticiaPrincipal {
+        background: url(../img/fondos/black_denim.png);
+        border: 1px solid #ffffff;
+        .probando {
+            h5 {
+                padding-bottom: 5px;
+                border-bottom: 2px solid #620001;
+            }
+        }
+    }
+    /*----------------------------------------*/
+    .tresnoticias {
+        //background-color: red;
+        .card {
+            background-color: #a33c1f;//620001
+            .card-body {
+                color: #FDF0ED;
+                h5 {
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid #FDF0ED;
+                }
+            }
+        }
+    }
+    /*----------------------------------------*/
+    .dosnoticias {
+        //background-color: red;
+        .card {
+            .card-body {
+                h5 {
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid #413c8b;
                 }
             }
         }
@@ -90,10 +131,11 @@ aside {
         }
     }
     .colorFondo {
-        background-color: #cacaca;
+        background: url(../img/fondos/white_leather.png);
     }
     .jugmes {
-        background-color: #cacaca;
+        //background-color: #FDF0ED;
+        background: url(../img/fondos/white_leather.png);
         color: #3b3b3b;
         .titulo {
             i {
@@ -119,9 +161,13 @@ aside {
     }
 }
 
+.bordedivisor {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b4b4b4;
+}
 
 .contenedor {
-    background-color: #252525;
+    background: url(../img/fondos/black_denim.png);
     .sliderJugadores {
         width: 96%;
         margin: auto;
@@ -134,7 +180,6 @@ aside {
             margin-top: 50px;
             h3 {
                 color: #727171;
-                //font-size: 2em;
                 padding: 0 20px;
                 display: inline-block;
             }
@@ -150,11 +195,11 @@ aside {
             overflow: hidden;
             .jugador {
                 padding: 5px;
-                opacity: .7;
+                //opacity: .7;
                 transition: all 1s ease;           
-                &:hover {
+                /* &:hover {
                     opacity: 1;
-                }
+                } */
                 .descripcion {
                     text-align: center;
                     background-color: #ffffff;
@@ -203,6 +248,9 @@ aside {
 
 
 //Texto previo al formulario -------------
+.contenedorFormulario {
+    background: url(../img/fondos/white_leather.png);
+}
 .tituloFormulario {
     h1 {
         padding-top: 50px;
@@ -243,6 +291,7 @@ aside {
 
 
 footer {
+    background: url(../img/fondos/black_denim.png);
     .iconos {
         padding: 50px 0;
         //background-color: #ffffff;
@@ -294,5 +343,22 @@ footer {
         width: 80%;
         margin: 0 auto;
         border-radius: 5px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    main {
+        .tresnoticias {
+            .card {
+                background-color: #FDF0ED;
+                .card-body {
+                    color: #333333;
+                    h5 {
+                        border-bottom: 2px solid #333333;
+                    }
+                }
+            }
+        }
     }
 }

@@ -16,8 +16,8 @@ jugadores.push(new jugador(2, 'Gonzalo Muñoz', 31, 'clásico', 'T.C.', 'hombre'
 jugadores.push(new jugador(3, 'Claudio Palacios', 27, 'estilo 3', 'T.C.', 'hombre', 'descripcion'));
 jugadores.push(new jugador(4, 'Camilo Masias', 16, 'clásico', 'juvenil', 'hombre', 'descripcion'));
 jugadores.push(new jugador(5, 'Ding Ning', 18, 'clásico', 'juvenil', 'mujer', 'descripcion'));
-jugadores.push(new jugador(6, 'Pablo Duffe', 26, 'clásico', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(7, 'Ivan Sánchez', 22, 'clásico', 'T.C.', 'hombre', 'descripcion'));
+jugadores.push(new jugador(6, 'Pablo Duffé', 26, 'clásico', 'T.C.', 'hombre', 'descripcion'));
+jugadores.push(new jugador(7, 'Iván Sánchez', 22, 'clásico', 'T.C.', 'hombre', 'descripcion'));
 jugadores.push(new jugador(8, 'Rodrigo Correa', 35, 'clásico', 'T.C.', 'hombre', 'descripcion'));
 jugadores.push(new jugador(9, 'Claudio Verdugo', 26, 'clásico', 'T.C.', 'hombre', 'descripcion'));
 jugadores.push(new jugador(10, 'Miguel Quilodrán', 27, 'lapicero', 'T.C.', 'hombre', 'descripcion'));
