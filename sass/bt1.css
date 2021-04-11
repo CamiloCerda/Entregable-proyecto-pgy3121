@@ -1,13 +1,20 @@
 body {
   background: url(../img/tdm/galeria/Sports.png); }
 
-.fas {
-  margin-right: 10px; }
-  .fas.der {
-    margin-left: 20px; }
+header .tituloHeader {
+  font-family: 'Dancing Script';
+  color: #000000;
+  background-color: #ffffff; }
+  header .tituloHeader i {
+    margin: 0 20px;
+    font-size: 30px; }
+header nav .container-fluid .navbar-collapse .navbar-nav .nav-item {
+  margin-right: 25px; }
+  header nav .container-fluid .navbar-collapse .navbar-nav .nav-item a i {
+    padding-right: 10px; }
 
 .fas, .titulo {
-  font-size: 1.5em; }
+  font-size: 1em; }
 
 .cajarrss {
   display: flex;
