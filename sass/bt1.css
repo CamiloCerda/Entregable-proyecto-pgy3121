@@ -1,5 +1,5 @@
 body {
-  background: url(../img/tdm/galeria/Sports.png); }
+  background: url(../img/fondos/white_leather.png); }
 
 header .tituloHeader {
   font-family: 'Dancing Script';
@@ -16,24 +16,29 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-item {
 .fas, .titulo {
   font-size: 1em; }
 
-.cajarrss {
-  display: flex;
-  justify-content: start;
-  align-items: center; }
-  .cajarrss h2 {
-    font-style: italic; }
-  .cajarrss i {
-    margin-left: 10px;
-    font-size: 30px; }
-
-.iconos {
-  padding: 50px 0; }
-  .iconos a i {
-    font-size: 30px;
-    color: #615d5d; }
-
 .italica {
   font-style: italic; }
+
+main .cajaRedes {
+  background-color: #ffffff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px; }
+  main .cajaRedes .cajarrss {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #616161; }
+    main .cajaRedes .cajarrss h2 {
+      font-style: italic; }
+    main .cajaRedes .cajarrss i {
+      margin-left: 10px;
+      font-size: 30px; }
+  main .cajaRedes .iconos {
+    padding: 50px 0; }
+    main .cajaRedes .iconos a i {
+      font-size: 30px;
+      color: #616161; }
 
 aside {
   border: 1px solid #dadada; }
@@ -46,30 +51,25 @@ aside {
       font-weight: 500; }
     aside .ranking ol li {
       border-bottom: 1px solid #bebebe; }
-
-.colorFondo {
-  background-color: #cacaca; }
-
-.jugmes {
-  background-color: #cacaca;
-  color: #3b3b3b;
-  /* img {
-      padding: 10px;
-  } */ }
-  .jugmes .titulo i {
-    margin: 0 10px;
-    font-size: 16px;
-    text-align: center; }
-  .jugmes .titulo h5 {
-    font-size: 16px;
-    text-align: center; }
-  .jugmes p, .jugmes a {
+  aside .colorFondo {
+    background-color: #cacaca; }
+  aside .jugmes {
+    background-color: #cacaca;
     color: #3b3b3b; }
-  .jugmes p {
-    text-align: justify; }
-  .jugmes a:hover {
-    color: #000000;
-    transition: all .5s ease; }
+    aside .jugmes .titulo i {
+      margin: 0 10px;
+      font-size: 16px;
+      text-align: center; }
+    aside .jugmes .titulo h5 {
+      font-size: 16px;
+      text-align: center; }
+    aside .jugmes p, aside .jugmes a {
+      color: #3b3b3b; }
+    aside .jugmes p {
+      text-align: justify; }
+    aside .jugmes a:hover {
+      color: #000000;
+      transition: all .5s ease; }
 
 .contenedor {
   background-color: #252525; }
@@ -88,7 +88,8 @@ aside {
         padding: 0 20px;
         display: inline-block; }
       .contenedor .sliderJugadores .titulo i {
-        color: #b4b4b4; }
+        color: #b4b4b4;
+        font-size: 2em; }
     .contenedor .sliderJugadores .subContenedor {
       width: 89%;
       margin: 20px auto 40px auto;
@@ -151,6 +152,11 @@ aside {
   .formularioContacto input.nombre {
     width: 200%; }
 
+footer .iconos {
+  padding: 50px 0; }
+  footer .iconos a i {
+    font-size: 30px;
+    color: #616161; }
 footer .descripcion {
   text-align: justify; }
   footer .descripcion h3 {
