@@ -1,0 +1,259 @@
+body {
+    background: url(../img/fondos/black_denim.png);
+}
+
+header {
+    .titulo {
+        font-family: 'Dancing Script';
+        color: #000000;
+        background-color: #ffffff;
+        i {
+            margin: 0 20px;
+            font-size: 30px;
+        }
+    }
+    nav {
+        .container-fluid {
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        margin-right: 25px;
+                        a {
+                            i {
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+main {
+    .cajaJugador {
+        background-color: #ffffff;
+        padding: 20px 5px;
+        width: 70%;
+        margin: auto;
+        .contenedorFoto {
+            img {
+                display: block;
+                margin: auto;
+                width: 80%;
+            }
+        }
+        .nombre {
+            font-family: 'Train One';
+            h3 {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 70px;
+            }
+        }
+    }
+    .contenido {
+        .col-md-5 {
+            background-color: #ffffff;
+            padding: 20px;
+            h3 {
+                font-size: 20px;
+                padding-bottom: 5px;
+                border-bottom: 2px solid rgb(163, 163, 0);
+            }
+        }
+        .col-md-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            i {
+                margin: 20px 0;
+                font-size: 50px;
+            }
+            h3 {
+                font-family: 'Dancing Script';
+            }
+        }
+    }
+    .contenedorImagenesPagPersonal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .titulo {
+            padding: 20px;
+            p {
+                font-size: 2.5em;
+                color: #ffffff;
+                font-family: 'Dancing Script';
+                padding-bottom: 10px;
+                border-bottom: 2px solid #ffffff;
+            }
+        }
+        .imagenes {
+            width: 100%;
+            display: flex;
+            margin: 10px auto 200px;
+            .flechas {
+                width: 5%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                i {
+                    font-size: 2em;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                &.der {
+                    flex-direction: row-reverse;
+                }
+            }
+            .sliderPaginaPersonal {
+                display: flex;
+                width: 100%;
+                background-color: #ffffff;
+                overflow: hidden;
+                padding: 20px;
+                .caja {
+                    padding: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 1s ease;
+                    img {
+                        vertical-align: bottom;
+                        opacity: .6;
+                        border: 2px solid rgb(0, 0, 0);
+                        border-radius: 5px;
+                        box-shadow: 8px 8px 20px #0a0a0a;
+                        transition: all .4s ease;
+                        &:hover {
+                            opacity: 1;
+                            box-shadow: 8px 8px 50px #030303;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    .iconos {
+        padding: 50px 0;
+        a {
+            i {
+                font-size: 30px;
+                color: #615d5d;
+            }
+        }
+    }
+    
+    .descripcion {
+        text-align: justify;
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffff;
+            //text-align: justify;
+        }
+    }
+    .gris {
+        color: #615d5d;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .logos {
+        display: flex;
+        justify-content: center;
+        //align-items: center;
+        a {
+            img {
+                padding-top: 50px;
+        
+                width: 100%;
+                //margin: auto;
+                //float: left;
+            }
+        }
+    }
+    .ubicacion {
+        color: #615d5d;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    .frase {
+        color: #615d5d;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 40px 0;
+        text-align: center;
+    }
+    iframe {
+        margin-bottom: 20px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    main {
+        .cajaJugador {
+            .contenedorFoto {
+                img {
+                    width: 100%;
+                }
+            }
+            .nombre {
+                padding-top: 10px;
+                h3 {
+                    font-size: 25px;
+                }
+                h2 {
+                    font-size: 50px;
+                }
+            }
+        }
+        .contenido {
+            padding: 10px;
+            .col-md-5 {
+                margin: auto;
+            }
+        }
+
+        .contenedorImagenesPagPersonal {
+            .imagenes {
+                .sliderPaginaPersonal {
+                    padding: 0;
+                    .caja {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:300px) {
+    main {
+        .cajaJugador {
+            .nombre {
+                h3 {
+                    font-size: 15px;
+                }
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

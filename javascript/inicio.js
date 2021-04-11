@@ -1,5 +1,4 @@
 let sonidopingpong = document.querySelector('.sonidopingpong');
-
 let inputUserName = document.querySelector('.nombreusuario');
 
 function sonar() {
