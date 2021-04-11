@@ -18,7 +18,7 @@ main {
     margin: auto; }
   main .formuInicio {
     width: 30%;
-    margin: auto;
+    margin: 0 auto 50px;
     background-color: #313131;
     padding: 20px;
     border-radius: 10px;

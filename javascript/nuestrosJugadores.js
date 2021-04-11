@@ -95,7 +95,7 @@ function buscar(){
             jugadorDiv.appendChild(imagenJugador);
             let nombreJugador = document.createElement('a');
             nombreJugador.textContent = jugadoresCumplenSeleccion[i].nombre;
-            nombreJugador.href = 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/html/paginaPersonalASS.html';
+            nombreJugador.href = 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/html/CamiloMasias.html';
             nombreJugador.target = '_blank';
             jugadorDiv.appendChild(nombreJugador);
         }
