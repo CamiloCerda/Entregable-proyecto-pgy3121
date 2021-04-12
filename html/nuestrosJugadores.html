@@ -61,24 +61,10 @@
             <div class="titulo">
                 <h1>Nuestros jugadores</h1>
             </div>
-            <div class="filtros">
-                <div class="genero">
-                    <div class="col uno">
-                        <label for="hombre">Hombres</label>
-                        <input type="radio" name="radioGenero" id="hombre" value="hombre">
-                    </div>
-                    <div class="col dos">
-                        <label for="mujer">Mujeres</label>
-                        <input type="radio" name="radioGenero" id="mujer" value="mujer">
-                    </div>
-                    <div class="col tres">
-                        <label for="todos">Todos</label>
-                        <input type="radio" name="radioGenero" id="todos" value="todos" checked>
-                    </div>
-                </div>
-                <div class="categoria">
-                    <label for="category">Categoría</label>
-                    <select name="selectCategoria" id="category">
+            <div class="filtros mb-4">
+                <div class="categoria mt-4 mt-lg-0">
+                    <select class="form-select" aria-label="Default select example" name="selectCategoria" id="category">
+                        <option selected>Categoría</option>
                         <option value="todos">Todos</option>
                         <option value="preInfantil">Pre-Infantil</option>
                         <option value="infantil">Infantil</option>
@@ -86,6 +72,18 @@
                         <option value="T.C.">Todo Competidor</option>
                     </select>
                 </div>
+
+                <div class="btn-group d-flex flex-column flex-sm-row mb-4 mb-sm-0" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="radioGenero" id="mujer" value="mujer" autocomplete="off" checked>
+                    <label class="btn btn-outline-light" for="mujer">Mujeres</label>
+                  
+                    <input type="radio" class="btn-check" name="radioGenero" id="hombre" value="hombre" autocomplete="off">
+                    <label class="btn btn-outline-light" for="hombre">Hombres</label>
+
+                    <input type="radio" class="btn-check" name="radioGenero" id="todos" value="todos" autocomplete="off">
+                    <label class="btn btn-outline-light" for="todos">Todos</label>
+                </div>
+
                 <button type="button" class="btn buscar mb-4">Buscar</button>
             </div>
 

@@ -1,6 +1,7 @@
 body {
   background: url(../img/fondos/black_denim.png);
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 header .titulo {
   font-family: 'Dancing Script';
@@ -52,22 +53,22 @@ main .contenedorJugadores {
         main .contenedorJugadores .filtros .genero .col input {
           cursor: pointer; }
     main .contenedorJugadores .filtros .categoria {
-      display: flex;
       align-items: center; }
-      main .contenedorJugadores .filtros .categoria label {
-        font-size: 1.2em;
-        padding-right: 10px; }
       main .contenedorJugadores .filtros .categoria select {
-        font-size: 1.1em;
+        font-size: 1em;
         padding: 5px;
-        cursor: pointer; }
+        cursor: pointer;
+        width: 200px; }
     main .contenedorJugadores .filtros .buscar {
       margin-top: 25px;
       background-color: #0e293d;
       color: #ffffff; }
       main .contenedorJugadores .filtros .buscar:hover {
-        transition: all 0.2s ease;
-        opacity: .6; }
+        transition: all 0.3s ease;
+        opacity: .5; }
+      main .contenedorJugadores .filtros .buscar:active {
+        transition: all 0.3s ease;
+        opacity: .8; }
   main .contenedorJugadores .jugadores {
     width: 90%;
     margin: auto;
