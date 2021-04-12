@@ -1,6 +1,6 @@
 body {
     background: url(../img/fondos/black_denim.png);
-    /* background: url(../img/fondos/white_leather.png); */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -8,9 +8,24 @@ header {
         font-family: 'Dancing Script';
         color: #000000;
         background-color: #ffffff;
+        justify-content: center;
         i {
             margin: 0 20px;
             font-size: 30px;
+        }
+    }
+    .usuario {
+        background-color: #ffffff;
+        font-family: 'Dancing Script';
+        display: flex;
+        justify-content: center;
+        //align-items: center;
+        align-content: center;
+        h3, i {
+            font-size: 20px;
+        }
+        i {
+            margin-left: 10px;
         }
     }
     nav {
@@ -44,6 +59,7 @@ header {
     background: url(../img/fondos/white_leather.png);
     border-radius: 10px;
     padding: 20px;
+    /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 }
 
 main {
@@ -179,12 +195,12 @@ aside {
             align-self: flex-start;
             margin-top: 50px;
             h3 {
-                color: #727171;
+                color: #f3f3f3;
                 padding: 0 20px;
                 display: inline-block;
             }
             i {
-                color: #b4b4b4;
+                color: #f3f3f3;
                 font-size: 2em;
             }
         }
@@ -224,7 +240,7 @@ aside {
             .caja {
                 i {
                     font-size: 2.5em;
-                    color: #615d5d;
+                    color: #dddddd;
                     margin-bottom: 50px;
                     &.fa-chevron-left {
                         margin-right: 20px;
@@ -298,7 +314,7 @@ footer {
         a {
             i {
                 font-size: 30px;
-                color: #616161;
+                color: #fafafa;
             }
         }
     }
@@ -307,11 +323,11 @@ footer {
         h3 {
             font-size: 16px;
             font-weight: 400;
-            color: #615d5d;
+            color: #ffffff;
         }
     }
     .gris {
-        color: #615d5d;
+        color: #ffffff;
         margin-bottom: 15px;
         margin-top: 15px;
     }
@@ -326,13 +342,13 @@ footer {
         }
     }
     .ubicacion {
-        color: #615d5d;
+        color: #ffffff;
         font-size: 16px;
         font-weight: 400;
         margin: 20px 0;
     }
     .frase {
-        color: #615d5d;
+        color: #ffffff;
         font-size: 16px;
         font-weight: 400;
         margin: 40px 0;
@@ -348,6 +364,14 @@ footer {
 
 
 @media screen and (max-width:800px) {
+    header {
+        .usuario {
+            padding-top: 10px;
+            h3, i {
+                font-size: 17px;
+            }
+        }
+    }
     main {
         .tresnoticias {
             .card {

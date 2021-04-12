@@ -1,14 +1,25 @@
 body {
   background: url(../img/fondos/black_denim.png);
-  /* background: url(../img/fondos/white_leather.png); */ }
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 header .tituloHeader {
   font-family: 'Dancing Script';
   color: #000000;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  justify-content: center; }
   header .tituloHeader i {
     margin: 0 20px;
     font-size: 30px; }
+header .usuario {
+  background-color: #ffffff;
+  font-family: 'Dancing Script';
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  header .usuario h3, header .usuario i {
+    font-size: 20px; }
+  header .usuario i {
+    margin-left: 10px; }
 header nav .container-fluid .navbar-collapse .navbar-nav .nav-item {
   margin-right: 25px; }
   header nav .container-fluid .navbar-collapse .navbar-nav .nav-item a i {
@@ -23,7 +34,8 @@ header nav .container-fluid .navbar-collapse .navbar-nav .nav-item {
 .caruselFotos {
   background: url(../img/fondos/white_leather.png);
   border-radius: 10px;
-  padding: 20px; }
+  padding: 20px;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */ }
 
 main {
   /*----------------------------------------*/
@@ -113,11 +125,11 @@ aside {
       align-self: flex-start;
       margin-top: 50px; }
       .contenedor .sliderJugadores .titulo h3 {
-        color: #727171;
+        color: #f3f3f3;
         padding: 0 20px;
         display: inline-block; }
       .contenedor .sliderJugadores .titulo i {
-        color: #b4b4b4;
+        color: #f3f3f3;
         font-size: 2em; }
     .contenedor .sliderJugadores .subContenedor {
       width: 89%;
@@ -147,7 +159,7 @@ aside {
       display: flex; }
       .contenedor .sliderJugadores .flechas .caja i {
         font-size: 2.5em;
-        color: #615d5d;
+        color: #dddddd;
         margin-bottom: 50px; }
         .contenedor .sliderJugadores .flechas .caja i.fa-chevron-left {
           margin-right: 20px; }
@@ -190,15 +202,15 @@ footer {
     padding: 50px 0; }
     footer .iconos a i {
       font-size: 30px;
-      color: #616161; }
+      color: #fafafa; }
   footer .descripcion {
     text-align: justify; }
     footer .descripcion h3 {
       font-size: 16px;
       font-weight: 400;
-      color: #615d5d; }
+      color: #ffffff; }
   footer .gris {
-    color: #615d5d;
+    color: #ffffff;
     margin-bottom: 15px;
     margin-top: 15px; }
   footer .logos {
@@ -208,12 +220,12 @@ footer {
       padding-top: 50px;
       width: 100%; }
   footer .ubicacion {
-    color: #615d5d;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     margin: 20px 0; }
   footer .frase {
-    color: #615d5d;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     margin: 40px 0;
@@ -225,6 +237,11 @@ footer {
     border-radius: 5px; }
 
 @media screen and (max-width: 800px) {
+  header .usuario {
+    padding-top: 10px; }
+    header .usuario h3, header .usuario i {
+      font-size: 17px; }
+
   main .tresnoticias .card {
     background-color: #FDF0ED; }
     main .tresnoticias .card .card-body {
