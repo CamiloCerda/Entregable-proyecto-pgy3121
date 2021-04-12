@@ -46,6 +46,25 @@ aside {
         p {
             text-align: justify;
         }
+        .imagen2 {
+            width: 100%;
+            //padding: 0;
+            .imagen {
+                width: 50%;
+                float: right;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                background-color: #1a1a1a;
+                text-align: justify;
+                padding: 5px;
+                img {
+                    width: 100%;
+                }
+            }
+            p {
+                text-align: justify;
+            }
+        }
     }
 }
 
@@ -62,6 +81,20 @@ aside {
                 width: 100%;
                 text-align: center;
                 font-size: 12px;
+            }
+            .imagen2 {
+                width: 100%;
+                
+                //padding: 0;
+                .imagen {
+                    width: 100%;
+                    text-align: center;
+                    margin: auto;
+                    float: none;
+                }
+                p {
+                    margin-top: 12px;
+                }
             }
         }
     }
