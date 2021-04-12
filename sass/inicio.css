@@ -1,5 +1,6 @@
 body {
-  background: url(../img/fondos/black_denim.png); }
+  background: url(../img/fondos/black_denim.png);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 header.titulo {
   font-family: 'Dancing Script';
