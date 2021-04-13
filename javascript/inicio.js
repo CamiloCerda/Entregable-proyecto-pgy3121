@@ -15,6 +15,6 @@ inputUserName.addEventListener('click', sonar);
 acceder.addEventListener('click', entrar); */
 
 acceder.addEventListener('click', function(){
-    window.open('../html/principal.html', '_self');
+    window.open('html/principal.html', '_self');
 });
 
