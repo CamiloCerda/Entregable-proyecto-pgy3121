@@ -92,6 +92,7 @@ function buscar(){
             contenedorjugadores.appendChild(jugadorDiv);
             let imagenJugador = document.createElement('img');
             imagenJugador.src = imagenesJugadoreCumplenSeleccion[i][1];
+            //imagenJugador.alt = jugadoresCumplenSeleccion[i][1];
             jugadorDiv.appendChild(imagenJugador);
             let nombreJugador = document.createElement('a');
             nombreJugador.textContent = jugadoresCumplenSeleccion[i].nombre;

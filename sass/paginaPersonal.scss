@@ -132,6 +132,8 @@ main {
                         border-radius: 5px;
                         box-shadow: 8px 8px 20px #0a0a0a;
                         transition: all .4s ease;
+                        width: 220px;
+                        height: 281px;
                         &:hover {
                             opacity: 1;
                             box-shadow: 8px 8px 50px #030303;
@@ -172,14 +174,10 @@ footer {
     .logos {
         display: flex;
         justify-content: center;
-        //align-items: center;
         a {
             img {
                 padding-top: 50px;
-        
                 width: 100%;
-                //margin: auto;
-                //float: left;
             }
         }
     }
@@ -204,13 +202,35 @@ footer {
     }
 }
 
+@media screen and (max-width:800px) {
+    main {
+        .contenedorImagenesPagPersonal {
+            .imagenes {
+                .sliderPaginaPersonal {
+                    padding: 0;
+                    .caja {
+                        padding: 0;
+                        img {
+                            width: 200px;
+                            height: 256px;
+                            margin: 10px;    
+                            opacity: 1;                
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width:600px) {
     main {
         .cajaJugador {
+            width: 90%;
             .contenedorFoto {
                 img {
-                    width: 100%;
+                    width: 90%;
                 }
             }
             .nombre {
@@ -236,6 +256,31 @@ footer {
                     padding: 0;
                     .caja {
                         padding: 0;
+                        img {
+                            width: 180px;
+                            height: 231px;
+                            margin: 10px;                
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    main {
+        .contenedorImagenesPagPersonal {
+            .imagenes {
+                .sliderPaginaPersonal {
+                    padding: 0;
+                    .caja {
+                        padding: 0;
+                        img {
+                            width: 140px;
+                            height: 180px;
+                            margin: 5px;                
+                        }
                     }
                 }
             }
@@ -246,12 +291,33 @@ footer {
 @media screen and (max-width:300px) {
     main {
         .cajaJugador {
+            width: 100%;
+            .contenedorFoto {
+                img {
+                    width: 100%;
+                }
+            }
             .nombre {
                 h3 {
                     font-size: 15px;
                 }
                 h2 {
                     font-size: 30px;
+                }
+            }
+        }
+        .contenedorImagenesPagPersonal {
+            .imagenes {
+                .sliderPaginaPersonal {
+                    padding: 0;
+                    .caja {
+                        padding: 0;
+                        img {
+                            width: 180px;
+                            height: 231px;
+                            margin: 10px;                
+                        }
+                    }
                 }
             }
         }

@@ -92,7 +92,9 @@ main .contenedorImagenesPagPersonal {
           border: 2px solid black;
           border-radius: 5px;
           box-shadow: 8px 8px 20px #0a0a0a;
-          transition: all .4s ease; }
+          transition: all .4s ease;
+          width: 220px;
+          height: 281px; }
           main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja img:hover {
             opacity: 1;
             box-shadow: 8px 8px 50px #030303; }
@@ -135,15 +137,27 @@ footer iframe {
   margin: 0 auto;
   border-radius: 5px; }
 
+@media screen and (max-width: 800px) {
+  main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal {
+    padding: 0; }
+    main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja {
+      padding: 0; }
+      main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja img {
+        width: 200px;
+        height: 256px;
+        margin: 10px;
+        opacity: 1; } }
 @media screen and (max-width: 600px) {
-  main .cajaJugador .contenedorFoto img {
-    width: 100%; }
-  main .cajaJugador .nombre {
-    padding-top: 10px; }
-    main .cajaJugador .nombre h3 {
-      font-size: 25px; }
-    main .cajaJugador .nombre h2 {
-      font-size: 50px; }
+  main .cajaJugador {
+    width: 90%; }
+    main .cajaJugador .contenedorFoto img {
+      width: 90%; }
+    main .cajaJugador .nombre {
+      padding-top: 10px; }
+      main .cajaJugador .nombre h3 {
+        font-size: 25px; }
+      main .cajaJugador .nombre h2 {
+        font-size: 50px; }
   main .contenido {
     padding: 10px; }
     main .contenido .col-md-5 {
@@ -151,11 +165,36 @@ footer iframe {
   main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal {
     padding: 0; }
     main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja {
-      padding: 0; } }
+      padding: 0; }
+      main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja img {
+        width: 180px;
+        height: 231px;
+        margin: 10px; } }
+@media screen and (max-width: 400px) {
+  main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal {
+    padding: 0; }
+    main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja {
+      padding: 0; }
+      main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja img {
+        width: 140px;
+        height: 180px;
+        margin: 5px; } }
 @media screen and (max-width: 300px) {
-  main .cajaJugador .nombre h3 {
-    font-size: 15px; }
-  main .cajaJugador .nombre h2 {
-    font-size: 30px; } }
+  main .cajaJugador {
+    width: 100%; }
+    main .cajaJugador .contenedorFoto img {
+      width: 100%; }
+    main .cajaJugador .nombre h3 {
+      font-size: 15px; }
+    main .cajaJugador .nombre h2 {
+      font-size: 30px; }
+  main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal {
+    padding: 0; }
+    main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja {
+      padding: 0; }
+      main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja img {
+        width: 180px;
+        height: 231px;
+        margin: 10px; } }
 
 /*# sourceMappingURL=paginaPersonal.css.map */
