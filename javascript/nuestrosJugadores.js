@@ -29,23 +29,23 @@ jugadores.push(new jugador(15, 'Mima Ito', 20, 'clásico', 'T.C.', 'mujer', 'des
 jugadores.push(new jugador(16, 'Liu Shiwen', 24, 'clásico', 'T.C.', 'mujer', 'descripcion'));
 jugadores.push(new jugador(17, 'Chen Meng', 18, 'clásico', 'juvenil', 'mujer', 'descripcion'));
 
-let imagenesJugadores = [[1, `C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/9.jpg`],
-                         [2, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/6.jpg'], 
-                         [3, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/2.jpg'],
-                         [4, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/1.jpg'], 
-                         [5, `C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/13.jpg`],
-                         [6, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/3.jpg'], 
-                         [7, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/5.jpg'],
-                         [8, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/4.jpg'],
-                         [9, `C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/10.jpg`],
-                         [10, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/12.jpg'], 
-                         [11, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/11.jpg'],
-                         [12, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/8.jpg'],
-                         [13, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/7.jpg'],
-                         [14, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/14.jpg'], 
-                         [15, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/15.jpg'],
-                         [16, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/16.jpg'],
-                         [17, 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/img/tdm/galeria/jugadores/17.jpg']];
+let imagenesJugadores = [[1, '../img/tdm/galeria/jugadores/9.jpg'],
+                         [2, '../img/tdm/galeria/jugadores/6.jpg'], 
+                         [3, '../img/tdm/galeria/jugadores/2.jpg'],
+                         [4, '../img/tdm/galeria/jugadores/1.jpg'], 
+                         [5, '../img/tdm/galeria/jugadores/13.jpg'],
+                         [6, '../img/tdm/galeria/jugadores/3.jpg'], 
+                         [7, '../img/tdm/galeria/jugadores/5.jpg'],
+                         [8, '../img/tdm/galeria/jugadores/4.jpg'],
+                         [9, '../img/tdm/galeria/jugadores/10.jpg'],
+                         [10, '../img/tdm/galeria/jugadores/12.jpg'], 
+                         [11, '../img/tdm/galeria/jugadores/11.jpg'],
+                         [12, '../img/tdm/galeria/jugadores/8.jpg'],
+                         [13, '../img/tdm/galeria/jugadores/7.jpg'],
+                         [14, '../img/tdm/galeria/jugadores/14.jpg'], 
+                         [15, '../img/tdm/galeria/jugadores/15.jpg'],
+                         [16, '../img/tdm/galeria/jugadores/16.jpg'],
+                         [17, '../img/tdm/galeria/jugadores/17.jpg']];
                      
 function buscar(){
     let radioSeleccionado, comboBoxCategoriaSeleccionado; 
@@ -91,12 +91,13 @@ function buscar(){
             jugadorDiv.classList.add('jugador');
             contenedorjugadores.appendChild(jugadorDiv);
             let imagenJugador = document.createElement('img');
-            imagenJugador.src = imagenesJugadoreCumplenSeleccion[i][1];
-            //imagenJugador.alt = jugadoresCumplenSeleccion[i][1];
+            imagenJugador.setAttribute("src", imagenesJugadoreCumplenSeleccion[i][1]);
+            imagenJugador.setAttribute("alt", "jugador(a) ass");
+            imagenJugador.setAttribute("title", "jugador(a) ass");
             jugadorDiv.appendChild(imagenJugador);
             let nombreJugador = document.createElement('a');
             nombreJugador.textContent = jugadoresCumplenSeleccion[i].nombre;
-            nombreJugador.href = 'C:/Users/Camilo Cerda Vasquez/Desktop/Paginas de prueba/Javascript/Repositorios git/repositorio entregable 1/html/CamiloMasias.html';
+            nombreJugador.href = '../html/CamiloMasias.html';
             //nombreJugador.target = '_blank';
             jugadorDiv.appendChild(nombreJugador);
         }
