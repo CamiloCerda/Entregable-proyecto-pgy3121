@@ -105,19 +105,30 @@ main {
     .tresnoticias {
         //background-color: red;
         .card {
-            background-color: #a33c1f;//620001
+            background: url(../img/fondos/white_leather.png);
+            &.oscura {
+                background: url(../img/fondos/black_denim.png);
+                border: 1px solid rgb(190, 190, 190);
+                color: #ffffff;
+                .card-body {
+                    h5 {
+                        padding-bottom: 5px;
+                        border-bottom: 2px solid #ffffff;
+                    }
+                }
+            }
+            //background-color: #9c9c9c;//620001,a33c1f
             .card-body {
-                color: #FDF0ED;
+                color: #252525;
                 h5 {
                     padding-bottom: 5px;
-                    border-bottom: 2px solid #FDF0ED;
+                    border-bottom: 2px solid #131313;
                 }
             }
         }
     }
     /*----------------------------------------*/
     .dosnoticias {
-        //background-color: red;
         .card {
             .card-body {
                 h5 {
@@ -309,7 +320,7 @@ aside {
 footer {
     background: url(../img/fondos/black_denim.png);
     .iconos {
-        padding: 50px 0;
+        padding: 40px 0;
         //background-color: #ffffff;
         a {
             i {
@@ -372,14 +383,76 @@ footer {
             }
         }
     }
+    .caruselFotos {
+        border-radius: 0;
+        padding: 2px;
+    }
     main {
         .tresnoticias {
             .card {
-                background-color: #FDF0ED;
+                /* background-color: #FDF0ED;
+                background-color: red; */
+                &.clara {
+                    background: url(../img/fondos/white_leather.png);
+                }
+                &.oscura {
+                    background: url(../img/fondos/black_denim.png);
+                    border: 1px solid #929292;
+                    .card-body {
+                        h5 {
+                            border-bottom: 2px solid #413c8b;
+                        }
+                    }
+                }
                 .card-body {
                     color: #333333;
                     h5 {
                         border-bottom: 2px solid #333333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    header {
+        .usuario {
+            h3, i {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .contenedor {
+        .sliderJugadores {
+            .subContenedor {
+                .jugador {
+                    img {
+                        width: 180px;
+                        height: 237px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:300px){
+    .contenedor {
+        .sliderJugadores {
+            .subContenedor {
+                .jugador {
+                    img {
+                        width: 120px;
+                        height: 158px;
+                    }
+                    .descripcion {
+                        a {
+                            font-size: 16px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
                     }
                 }
             }

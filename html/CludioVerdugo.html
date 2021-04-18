@@ -14,8 +14,15 @@
 
 <body>
     <header>
-        <div class="col-12 d-flex justify-content-center align-items-center titulo">
+        <div class="col-12 d-flex justify-content-center align-items-center tituloHeader d-none d-sm-flex">
             <i class="fas fa-table-tennis"></i><h1>Asociación de tenis de mesa Santiago Sur</h1><i class="fas fa-table-tennis"></i>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center tituloHeader d-flex d-sm-none">
+            <i class="fas fa-table-tennis"></i><h1>A Stgo Sur</h1><i class="fas fa-table-tennis"></i>
+        </div>
+        <div class="usuario">
+            <h3>Bienvenido: Invitado</h3>
+            <i class="fas fa-user"></i>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0e293d;">
             <div class="container-fluid">
@@ -104,9 +111,6 @@
                 </div>
 
                 <div class="imagenes">
-                    <div class="flechas izq">
-                        <i class="fas fa-chevron-left" id="btnIzq"></i>
-                    </div>
                     <div class="sliderPaginaPersonal rounded">
                         <div class="caja">
                             <img src="../img/tdm/galeria/jugadores/CV/1.jpg" alt="Claudio Verdugo disputando un encuentro">
@@ -127,8 +131,13 @@
                             <img src="../img/tdm/galeria/jugadores/CV/6.jpg" alt="Claudio Verdugo disputando un encuentro">
                         </div>
                     </div>
-                    <div class="flechas der">
-                        <i class="fas fa-chevron-right" id="btnDer"></i>
+                    <div class="flechas mt-4">
+                        <div class="caja">
+                            <i class="fas fa-chevron-left" id="btnIzq"></i>
+                        </div>
+                        <div class="caja">
+                            <i class="fas fa-chevron-right" id="btnDer"></i>
+                        </div>
                     </div>
                 </div>
                 <script src="../javascript/sliderPaginaPersonalJugadores.js"></script>

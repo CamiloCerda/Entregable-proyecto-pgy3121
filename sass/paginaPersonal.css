@@ -1,13 +1,24 @@
 body {
   background: url(../img/fondos/black_denim.png); }
 
-header .titulo {
+header .tituloHeader {
   font-family: 'Dancing Script';
   color: #000000;
-  background-color: #ffffff; }
-  header .titulo i {
+  background-color: #ffffff;
+  justify-content: center; }
+  header .tituloHeader i {
     margin: 0 20px;
     font-size: 30px; }
+header .usuario {
+  background-color: #ffffff;
+  font-family: 'Dancing Script';
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  header .usuario h3, header .usuario i {
+    font-size: 20px; }
+  header .usuario i {
+    margin-left: 10px; }
 header nav .container-fluid .navbar-collapse .navbar-nav .nav-item {
   margin-right: 25px; }
   header nav .container-fluid .navbar-collapse .navbar-nav .nav-item a i {
@@ -61,6 +72,9 @@ main .contenedorImagenesPagPersonal {
   main .contenedorImagenesPagPersonal .imagenes {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px auto 200px; }
     main .contenedorImagenesPagPersonal .imagenes .flechas {
       width: 5%;
@@ -69,7 +83,8 @@ main .contenedorImagenesPagPersonal {
       justify-content: center;
       color: #ffffff; }
       main .contenedorImagenesPagPersonal .imagenes .flechas i {
-        font-size: 2em; }
+        font-size: 2em;
+        padding: 20px; }
         main .contenedorImagenesPagPersonal .imagenes .flechas i:hover {
           cursor: pointer; }
       main .contenedorImagenesPagPersonal .imagenes .flechas.der {
@@ -148,6 +163,9 @@ footer iframe {
         margin: 10px;
         opacity: 1; } }
 @media screen and (max-width: 600px) {
+  header .usuario h3, header .usuario i {
+    font-size: 16px; }
+
   main .cajaJugador {
     width: 90%; }
     main .cajaJugador .contenedorFoto img {

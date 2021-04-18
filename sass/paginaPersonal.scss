@@ -3,13 +3,28 @@ body {
 }
 
 header {
-    .titulo {
+    .tituloHeader {
         font-family: 'Dancing Script';
         color: #000000;
         background-color: #ffffff;
+        justify-content: center;
         i {
             margin: 0 20px;
             font-size: 30px;
+        }
+    }
+    .usuario {
+        background-color: #ffffff;
+        font-family: 'Dancing Script';
+        display: flex;
+        justify-content: center;
+        //align-items: center;
+        align-content: center;
+        h3, i {
+            font-size: 20px;
+        }
+        i {
+            margin-left: 10px;
         }
     }
     nav {
@@ -96,6 +111,9 @@ main {
         .imagenes {
             width: 100%;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             margin: 10px auto 200px;
             .flechas {
                 width: 5%;
@@ -105,6 +123,7 @@ main {
                 color: #ffffff;
                 i {
                     font-size: 2em;
+                    padding: 20px;
                     &:hover {
                         cursor: pointer;
                     }
@@ -225,6 +244,13 @@ footer {
 
 
 @media screen and (max-width:600px) {
+    header {
+        .usuario {
+            h3, i {
+                font-size: 16px;
+            }
+        }
+    }
     main {
         .cajaJugador {
             width: 90%;
