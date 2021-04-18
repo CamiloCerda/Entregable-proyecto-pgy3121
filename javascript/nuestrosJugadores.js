@@ -13,7 +13,7 @@ class jugador {
 
 let jugadores = [];
 jugadores.push(new jugador(1, 'Camilo Cerda', 28, 'clásico', 'T.C.', 'hombre', 'descripcion', '../html/CamiloCerda.html'));
-jugadores.push(new jugador(2, 'Gonzalo Muñoz', 31, 'clásico', 'T.C.', 'hombre', 'descripcion', '../html/GonzaloMuñoz.html'));
+jugadores.push(new jugador(2, 'Gonzalo Muñoz', 31, 'clásico', 'T.C.', 'hombre', 'descripcion', '../html/GonzaloMunoz.html'));
 jugadores.push(new jugador(3, 'Claudio Palacios', 27, 'estilo 3', 'T.C.', 'hombre', 'descripcion', '../html/ClaudioPalacios.html'));
 jugadores.push(new jugador(4, 'Camilo Masias', 16, 'clásico', 'juvenil', 'hombre', 'descripcion', '../html/CamiloMasias.html'));
 jugadores.push(new jugador(5, 'Ding Ning', 18, 'clásico', 'juvenil', 'mujer', 'descripcion', '../html/CamiloMasias.html'));
