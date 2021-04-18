@@ -17,7 +17,7 @@ btnIzq.addEventListener('click', function(){
 });
 
 btnDer.addEventListener('click', function(){
-    if (posicion < 12) {
+    if (posicion < 16) {
         posicion++;
         cantidad = posicion*(-100);
         for (let i = 0; i < jugadores.length; i++) {
