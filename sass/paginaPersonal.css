@@ -194,8 +194,8 @@ footer iframe {
     main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja {
       padding: 0; }
       main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja img {
-        width: 140px;
-        height: 180px;
+        width: 200px;
+        height: 256px;
         margin: 5px; } }
 @media screen and (max-width: 300px) {
   main .cajaJugador {
@@ -211,8 +211,8 @@ footer iframe {
     main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja {
       padding: 0; }
       main .contenedorImagenesPagPersonal .imagenes .sliderPaginaPersonal .caja img {
-        width: 180px;
-        height: 231px;
+        width: 200px;
+        height: 256px;
         margin: 10px; } }
 
 /*# sourceMappingURL=paginaPersonal.css.map */
