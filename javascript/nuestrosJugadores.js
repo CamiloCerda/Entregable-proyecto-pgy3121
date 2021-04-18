@@ -1,5 +1,5 @@
 class jugador {
-    constructor(id, nombre, edad, estilo, categoria, genero, descripcion){
+    constructor(id, nombre, edad, estilo, categoria, genero, descripcion, pagina){
         this.id = id;
         this.nombre = nombre;
         this.edad = edad;
@@ -7,27 +7,28 @@ class jugador {
         this.categoria = categoria;
         this.genero = genero;
         this.descripcion = descripcion;
+        this.pagina = pagina;
     }
 }
 
 let jugadores = [];
-jugadores.push(new jugador(1, 'Camilo Cerda', 28, 'clásico', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(2, 'Gonzalo Muñoz', 31, 'clásico', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(3, 'Claudio Palacios', 27, 'estilo 3', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(4, 'Camilo Masias', 16, 'clásico', 'juvenil', 'hombre', 'descripcion'));
-jugadores.push(new jugador(5, 'Ding Ning', 18, 'clásico', 'juvenil', 'mujer', 'descripcion'));
-jugadores.push(new jugador(6, 'Pablo Duffé', 26, 'clásico', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(7, 'Iván Sánchez', 22, 'clásico', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(8, 'Rodrigo Correa', 35, 'clásico', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(9, 'Claudio Verdugo', 26, 'clásico', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(10, 'Miguel Quilodrán', 27, 'lapicero', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(11, 'Bastián Maureira', 25, 'lapicero', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(12, 'Matias Arias', 26, 'lapicero', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(13, 'Javier Herdocio', 55, 'lapicero', 'T.C.', 'hombre', 'descripcion'));
-jugadores.push(new jugador(14, 'Bernadette Sockz', 27, 'clásico', 'T.C.', 'mujer', 'descripcion'));
-jugadores.push(new jugador(15, 'Mima Ito', 20, 'clásico', 'T.C.', 'mujer', 'descripcion'));
-jugadores.push(new jugador(16, 'Liu Shiwen', 24, 'clásico', 'T.C.', 'mujer', 'descripcion'));
-jugadores.push(new jugador(17, 'Chen Meng', 18, 'clásico', 'juvenil', 'mujer', 'descripcion'));
+jugadores.push(new jugador(1, 'Camilo Cerda', 28, 'clásico', 'T.C.', 'hombre', 'descripcion', '../html/CamiloCerda.html'));
+jugadores.push(new jugador(2, 'Gonzalo Muñoz', 31, 'clásico', 'T.C.', 'hombre', 'descripcion', '../html/GonzaloMuñoz.html'));
+jugadores.push(new jugador(3, 'Claudio Palacios', 27, 'estilo 3', 'T.C.', 'hombre', 'descripcion', '../html/ClaudioPalacios.html'));
+jugadores.push(new jugador(4, 'Camilo Masias', 16, 'clásico', 'juvenil', 'hombre', 'descripcion', '../html/CamiloMasias.html'));
+jugadores.push(new jugador(5, 'Ding Ning', 18, 'clásico', 'juvenil', 'mujer', 'descripcion', '../html/CamiloMasias.html'));
+jugadores.push(new jugador(6, 'Pablo Duffé', 26, 'clásico', 'T.C.', 'hombre', 'descripcion', '../html/PabloDuffe.html'));
+jugadores.push(new jugador(7, 'Iván Sánchez', 22, 'clásico', 'T.C.', 'hombre', 'descripcion', '../html/IvanSanchez.html'));
+jugadores.push(new jugador(8, 'Rodrigo Correa', 35, 'clásico', 'T.C.', 'hombre', 'descripcion', '../html/RodrigoCorrea.html'));
+jugadores.push(new jugador(9, 'Claudio Verdugo', 26, 'clásico', 'T.C.', 'hombre', 'descripcion', '../html/CludioVerdugo.html'));
+jugadores.push(new jugador(10, 'Miguel Quilodrán', 27, 'lapicero', 'T.C.', 'hombre', 'descripcion', '../html/MiguelQuilodran.html'));
+jugadores.push(new jugador(11, 'Bastián Maureira', 25, 'lapicero', 'T.C.', 'hombre', 'descripcion', '../html/BastianMaureira.html'));
+jugadores.push(new jugador(12, 'Matias Arias', 26, 'lapicero', 'T.C.', 'hombre', 'descripcion', '../html/MatiasArias.html'));
+jugadores.push(new jugador(13, 'Javier Herdocio', 55, 'lapicero', 'T.C.', 'hombre', 'descripcion', '../html/JavierHerdocio.html'));
+jugadores.push(new jugador(14, 'Bernadette Sockz', 27, 'clásico', 'T.C.', 'mujer', 'descripcion', '../html/CamiloMasias.html'));
+jugadores.push(new jugador(15, 'Mima Ito', 20, 'clásico', 'T.C.', 'mujer', 'descripcion', '../html/CamiloMasias.html'));
+jugadores.push(new jugador(16, 'Liu Shiwen', 24, 'clásico', 'T.C.', 'mujer', 'descripcion', '../html/CamiloMasias.html'));
+jugadores.push(new jugador(17, 'Chen Meng', 18, 'clásico', 'juvenil', 'mujer', 'descripcion', '../html/CamiloMasias.html'));
 
 let imagenesJugadores = [[1, '../img/tdm/galeria/jugadores/9.jpg'],
                          [2, '../img/tdm/galeria/jugadores/6.jpg'], 
@@ -97,7 +98,7 @@ function buscar(){
             jugadorDiv.appendChild(imagenJugador);
             let nombreJugador = document.createElement('a');
             nombreJugador.textContent = jugadoresCumplenSeleccion[i].nombre;
-            nombreJugador.href = '../html/CamiloMasias.html';
+            nombreJugador.href = jugadoresCumplenSeleccion[i].pagina;
             //nombreJugador.target = '_blank';
             jugadorDiv.appendChild(nombreJugador);
         }
