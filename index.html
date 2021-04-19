@@ -47,9 +47,13 @@
         </div>
       </div>
       <div class="opciones d-flex flex-column flex-lg-row justify-content-around mt-5">
-        <button type="submit" class="mt-2 mx-md-1 btn btn-outline-primary">Ingresar</button>
+        <button type="button" class="mt-2 mx-md-1 btn btn-outline-primary ingresar">Ingresar</button>
         <button type="button" class="mt-2 mx-md-1 btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#registroModal">Registrarse</button>
         <button type="button" class="mt-2 mx-md-1 btn btn-outline-success acceder">Invitado</button>
+      </div>
+      <div class="alert alert-danger alert-dismissible fade show mt-3 d-none" role="alert">
+        <strong>Página en construcción. Elemento aún no funcionando.</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
       <!-- Modal -->
       <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
@@ -78,7 +82,7 @@
                       <input type="email" class="form-control" id="mailUsuario" placeholder="nombre@mail.com">
                     </div>
                     <div class="mb-3">
-                      <label for="interesesUsuario" class="form-label text-secondary">Interes. Cuéntanos algo de ti:</label>
+                      <label for="interesesUsuario" class="form-label text-secondary">Interés. Cuéntanos algo de ti:</label>
                       <textarea class="form-control" id="interesesUsuario" rows="3"></textarea>
                     </div>
                   </div>
