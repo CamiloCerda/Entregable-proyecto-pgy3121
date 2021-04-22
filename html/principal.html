@@ -393,26 +393,82 @@
                 </div>
             </div>
             <div class="row">
-                <form class="col formularioContacto m-2 bg-secondary bg-gradient action=">
+                <!-- Estamos trabajando aqui -->
+                <form class="col formularioContacto m-2 bg-secondary bg-gradient">
                     <div class="row">
                         <div class="mb-3 col-12 col-md-6">
-                            <label for="exampleFormControlNombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="exampleFormControlNombre" placeholder="Nombre...">
+                            <label for="nombreFormu" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" name="nombreFormu" id="nombreFormu" placeholder="Nombre...">
                         </div>
                         <div class="mb-3 col-12 col-md-6">
-                            <label for="exampleFormControlApellido" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="exampleFormControlApellido" placeholder="Apellido...">
+                            <label for="apellidoFormu" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" name="apellidoFormu" id="apellidoFormu" placeholder="Apellido...">
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Tu correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@mail.com">
+                        <label for="mailFormu" class="form-label">Tu correo electrónico</label>
+                        <input type="email" class="form-control" name="mailFormu" id="mailFormu" placeholder="nombre@mail.com">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje aquí</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="mensajeFormu" class="form-label">Escribe tu mensaje aquí</label>
+                        <textarea class="form-control" name="mensajeFormu" id="mensajeFormu" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-dark">Enviar</button>
+                    <div class="filtros d-flex flex-column flex-md-row">
+                        <div class="tipoMensaje">
+                            <div class="descripcion">
+                                <h5>Nos envías tu mensaje como</h5>
+                            </div>
+                            <div class="btn-group mb-3 radioTipoMensaje" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check mb-2" name="generoFormu" value="aficionado" id="aficionado" checked>
+                                <label class="btn btn-outline-light" for="aficionado">Aficionado</label>
+                              
+                                <input type="radio" class="btn-check mb-2" name="generoFormu" value="jugador" id="jugador">
+                                <label class="btn btn-outline-light" for="jugador">Jugador</label>
+        
+                                <input type="radio" class="btn-check mb-2" name="generoFormu" value="dirigente" id="dirigente">
+                                <label class="btn btn-outline-light" for="dirigente">Dirigente</label>
+                            </div>
+                        </div>
+                        <div class="terminosycondiciones">
+                            <button type="button" class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ver términos y condiciones
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sunt? Beatae provident placeat, laboriosam veritatis consectetur veniam, ipsam nam voluptate voluptas optio corporis? Repudiandae voluptate quos aspernatur nostrum! Quasi, id!
+                                            </p> 
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" name="terminos" value="aceptarTerminos" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-light mb-2" for="flexCheckIndeterminate">
+                                    Acepto términos de la mensajería
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-dark enviar">
+                            <p class="d-none d-sm-block">
+                                Envianos tu mensaje
+                            </p>
+                            <p class="d-block d-sm-none">
+                                Enviar
+                            </p>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
