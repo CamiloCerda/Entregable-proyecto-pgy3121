@@ -108,7 +108,7 @@ footer .iconos {
   padding: 50px 0; }
   footer .iconos a i {
     font-size: 30px;
-    color: #615d5d; }
+    color: #fafafa; }
 footer .descripcion {
   text-align: justify; }
   footer .descripcion h3 {
@@ -116,7 +116,7 @@ footer .descripcion {
     font-weight: 400;
     color: #ffffff; }
 footer .gris {
-  color: #615d5d;
+  color: #ffffff;
   margin-bottom: 15px;
   margin-top: 15px; }
 footer .logos {
@@ -126,12 +126,12 @@ footer .logos {
     padding-top: 50px;
     width: 100%; }
 footer .ubicacion {
-  color: #615d5d;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   margin: 20px 0; }
 footer .frase {
-  color: #615d5d;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   margin: 40px 0;
