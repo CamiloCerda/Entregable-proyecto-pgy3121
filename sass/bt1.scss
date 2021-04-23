@@ -2,7 +2,6 @@ body {
     background: url(../img/fondos/black_denim.png);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 header {
     .tituloHeader {
         font-family: 'Dancing Script';
@@ -45,23 +44,18 @@ header {
         }
     }
 }
-
-
 .fas, .titulo {
     font-size: 1em;
 }
-
 .italica {
     font-style: italic;
 }
-
 .caruselFotos {
     background: url(../img/fondos/white_leather.png);
     border-radius: 10px;
     padding: 20px;
     /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 }
-
 main {
     .cajaRedes {
         background: url(../img/fondos/white_leather.png);
@@ -139,8 +133,6 @@ main {
         }
     }
 }
-
-
 aside {
     border: 1px solid rgb(218, 218, 218);
     .ranking {
@@ -187,12 +179,10 @@ aside {
         }
     }
 }
-
 .bordedivisor {
     padding-bottom: 20px;
     border-bottom: 1px solid #b4b4b4;
 }
-
 .contenedor {
     background: url(../img/fondos/black_denim.png);
     .sliderJugadores {
@@ -271,9 +261,6 @@ aside {
         }
     }
 }
-
-
-
 //Texto previo al formulario -------------
 .contenedorFormulario {
     background: url(../img/fondos/white_leather.png);
@@ -301,9 +288,7 @@ aside {
             font-size: 18px;
         }
     }
-    
 }
-
 .formularioContacto {
     background-color: #dadada;
     padding: 20px;
@@ -338,15 +323,23 @@ aside {
             align-items: center;
         }
     }
+    .cajaBtn {
+        display: flex;
+        justify-content: center;
+        button {
+            width: 80%;
+            p {
+                font-size: 20px;
+                padding-top: 10px;
+            }
+        }
+    }
 }
 //Todo lo referente al formulario de contacto hasta aca
-
-
 footer {
     background: url(../img/fondos/black_denim.png);
     .iconos {
         padding: 40px 0;
-        //background-color: #ffffff;
         a {
             i {
                 font-size: 30px;
@@ -415,8 +408,6 @@ footer {
     main {
         .tresnoticias {
             .card {
-                /* background-color: #FDF0ED;
-                background-color: red; */
                 &.clara {
                     background: url(../img/fondos/white_leather.png);
                 }
@@ -441,15 +432,7 @@ footer {
     .formularioContacto {
         .filtros {
             .tipoMensaje {
-                .descripcion {
-                    h5 {
-                        font-size: 16px;
-                        text-align: center;
-                    }
-                }
                 .radioTipoMensaje {
-                    width: 90%;
-                    margin: auto;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -461,15 +444,13 @@ footer {
             .terminosycondiciones {
                 width: 90%;
                 margin: 20px auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
             }
         }
-        .enviar {
-            padding-top: 20px;
-            p {
-                font-size: 20px;
+        .cajaBtn {
+            button {
+                p {
+                    font-size: 16px;
+                }
             }
         }
     }

@@ -219,6 +219,14 @@ aside {
       display: flex;
       flex-direction: column;
       align-items: center; }
+  .formularioContacto .cajaBtn {
+    display: flex;
+    justify-content: center; }
+    .formularioContacto .cajaBtn button {
+      width: 80%; }
+      .formularioContacto .cajaBtn button p {
+        font-size: 20px;
+        padding-top: 10px; }
 
 footer {
   background: url(../img/fondos/black_denim.png); }
@@ -270,27 +278,19 @@ footer {
     border-radius: 0;
     padding: 2px; }
 
-  main .tresnoticias .card {
-    /* background-color: #FDF0ED;
-    background-color: red; */ }
-    main .tresnoticias .card.clara {
-      background: url(../img/fondos/white_leather.png); }
-    main .tresnoticias .card.oscura {
-      background: url(../img/fondos/black_denim.png);
-      border: 1px solid #929292; }
-      main .tresnoticias .card.oscura .card-body h5 {
-        border-bottom: 2px solid #413c8b; }
-    main .tresnoticias .card .card-body {
-      color: #333333; }
-      main .tresnoticias .card .card-body h5 {
-        border-bottom: 2px solid #333333; }
+  main .tresnoticias .card.clara {
+    background: url(../img/fondos/white_leather.png); }
+  main .tresnoticias .card.oscura {
+    background: url(../img/fondos/black_denim.png);
+    border: 1px solid #929292; }
+    main .tresnoticias .card.oscura .card-body h5 {
+      border-bottom: 2px solid #413c8b; }
+  main .tresnoticias .card .card-body {
+    color: #333333; }
+    main .tresnoticias .card .card-body h5 {
+      border-bottom: 2px solid #333333; }
 
-  .formularioContacto .filtros .tipoMensaje .descripcion h5 {
-    font-size: 16px;
-    text-align: center; }
   .formularioContacto .filtros .tipoMensaje .radioTipoMensaje {
-    width: 90%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -298,14 +298,9 @@ footer {
       width: 100%; }
   .formularioContacto .filtros .terminosycondiciones {
     width: 90%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .formularioContacto .enviar {
-    padding-top: 20px; }
-    .formularioContacto .enviar p {
-      font-size: 20px; } }
+    margin: 20px auto; }
+  .formularioContacto .cajaBtn button p {
+    font-size: 16px; } }
 @media screen and (max-width: 500px) {
   header .usuario h3, header .usuario i {
     font-size: 16px; }
