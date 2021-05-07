@@ -196,19 +196,56 @@ aside {
   .razonesContacto ul.destacar {
     font-size: 18px; }
 
+/* aca estamos en el formulario */
+.fondoRojo {
+  transition: all 0.4s ease;
+  background-color: #e95f64;
+  border: 2px solid #ff2828; }
+
 .formularioContacto {
   background-color: #dadada;
   padding: 20px;
   border-radius: 10px;
   width: 90%;
   margin: auto; }
-  .formularioContacto input.nombre {
-    width: 200%; }
+  .formularioContacto .cajaError {
+    height: 16px; }
+    .formularioContacto .cajaError p {
+      padding-top: 3px;
+      padding-bottom: 2px;
+      color: #960409;
+      font-weight: 600;
+      display: none; }
+  .formularioContacto .camposextras {
+    display: flex;
+    flex-wrap: wrap; }
+    .formularioContacto .camposextras .cajaTelefono {
+      width: 33%;
+      padding: 10px; }
+      .formularioContacto .camposextras .cajaTelefono .numTelefono {
+        width: 100%; }
+        .formularioContacto .camposextras .cajaTelefono .numTelefono .codigo {
+          width: 20%; }
+        .formularioContacto .camposextras .cajaTelefono .numTelefono .telefono {
+          width: 80%; }
+    .formularioContacto .camposextras .cajaRegion {
+      padding: 10px;
+      width: 33%; }
+    .formularioContacto .camposextras .cajaRutPasap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      width: 33%; }
+      .formularioContacto .camposextras .cajaRutPasap .texto {
+        align-self: start; }
+      .formularioContacto .camposextras .cajaRutPasap .radioRutPasap {
+        margin: auto; }
   .formularioContacto .filtros {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 50px 0; }
+    margin: 20px 0; }
     .formularioContacto .filtros .tipoMensaje .descripcion h5 {
       font-size: 16px;
       text-align: center; }
@@ -223,10 +260,13 @@ aside {
     display: flex;
     justify-content: center; }
     .formularioContacto .cajaBtn button {
-      width: 80%; }
+      width: 80%;
+      margin: 0 10px; }
       .formularioContacto .cajaBtn button p {
         font-size: 20px;
         padding-top: 10px; }
+  .formularioContacto .alertPreventDefault {
+    display: none; }
 
 footer {
   background: url(../img/fondos/black_denim.png); }
@@ -290,6 +330,16 @@ footer {
     main .tresnoticias .card .card-body h5 {
       border-bottom: 2px solid #333333; }
 
+  .formularioContacto .camposextras .cajaTelefono {
+    width: 50%; }
+    .formularioContacto .camposextras .cajaTelefono .numTelefono .codigo {
+      width: 30%; }
+    .formularioContacto .camposextras .cajaTelefono .numTelefono .telefono {
+      width: 70%; }
+  .formularioContacto .camposextras .cajaRegion {
+    width: 50%; }
+  .formularioContacto .camposextras .cajaRutPasap {
+    width: 100%; }
   .formularioContacto .filtros .tipoMensaje .radioTipoMensaje {
     display: flex;
     flex-direction: column;
@@ -299,11 +349,25 @@ footer {
   .formularioContacto .filtros .terminosycondiciones {
     width: 90%;
     margin: 20px auto; }
-  .formularioContacto .cajaBtn button p {
-    font-size: 16px; } }
+  .formularioContacto .cajaBtn {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .formularioContacto .cajaBtn button {
+      margin: 10px 0; }
+      .formularioContacto .cajaBtn button p {
+        font-size: 16px; } }
 @media screen and (max-width: 500px) {
   header .usuario h3, header .usuario i {
     font-size: 16px; }
+
+  .formularioContacto .camposextras .cajaTelefono {
+    width: 100%; }
+    .formularioContacto .camposextras .cajaTelefono .numTelefono .codigo {
+      width: 20%; }
+    .formularioContacto .camposextras .cajaTelefono .numTelefono .telefono {
+      width: 80%; }
+  .formularioContacto .camposextras .cajaRegion {
+    width: 100%; }
 
   .contenedor .sliderJugadores .subContenedor .jugador img {
     width: 180px;

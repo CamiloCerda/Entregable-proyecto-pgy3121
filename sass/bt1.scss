@@ -289,22 +289,69 @@ aside {
         }
     }
 }
+/* aca estamos en el formulario */
+.fondoRojo {
+    transition: all 0.4s ease;
+    background-color: #e95f64;
+    border: 2px solid #ff2828;
+    //color: #752626;
+}
+
 .formularioContacto {
     background-color: #dadada;
     padding: 20px;
     border-radius: 10px;
     width: 90%;
     margin: auto;
-    input {
-        &.nombre {
-            width: 200%;
+    .cajaError {
+        height: 16px;
+        p {
+            padding-top: 3px;
+            padding-bottom: 2px;
+            color: #960409;
+            font-weight: 600;
+            display: none;
+        }
+    }
+    .camposextras {
+        display: flex;
+        flex-wrap: wrap;
+        .cajaTelefono{
+            width: 33%;
+            padding: 10px;
+            .numTelefono {
+                width: 100%;
+                .codigo {
+                    width: 20%;
+                }
+                .telefono {
+                    width: 80%;
+                }
+            }
+        }
+        .cajaRegion {
+            padding: 10px;
+            width: 33%;
+        }
+        .cajaRutPasap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            width: 33%;
+            .texto {
+                align-self: start;
+            }
+            .radioRutPasap {
+                margin: auto;
+            }
         }
     }
     .filtros {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 50px 0;
+        margin: 20px 0;
         .tipoMensaje {
             .descripcion {
                 h5 {
@@ -328,11 +375,15 @@ aside {
         justify-content: center;
         button {
             width: 80%;
+            margin: 0 10px;
             p {
                 font-size: 20px;
                 padding-top: 10px;
             }
         }
+    }
+    .alertPreventDefault {
+        display: none;
     }
 }
 //Todo lo referente al formulario de contacto hasta aca
@@ -391,6 +442,8 @@ footer {
     }
 }
 
+//validaciones formulario
+
 
 @media screen and (max-width:768px) {
     header {
@@ -430,6 +483,25 @@ footer {
         }
     }
     .formularioContacto {
+        .camposextras {
+            .cajaTelefono{
+                width: 50%;
+                .numTelefono {
+                    .codigo {
+                        width: 30%;
+                    }
+                    .telefono {
+                        width: 70%;
+                    }
+                }
+            }
+            .cajaRegion {
+                width: 50%;
+            }
+            .cajaRutPasap {
+                width: 100%;
+            }
+        }
         .filtros {
             .tipoMensaje {
                 .radioTipoMensaje {
@@ -447,7 +519,10 @@ footer {
             }
         }
         .cajaBtn {
+            flex-direction: column-reverse;
+            align-items: center;
             button {
+                margin: 10px 0;
                 p {
                     font-size: 16px;
                 }
@@ -464,7 +539,24 @@ footer {
             }
         }
     }
-
+    .formularioContacto {
+        .camposextras {
+            .cajaTelefono{
+                width: 100%;
+                .numTelefono {
+                    .codigo {
+                        width: 20%;
+                    }
+                    .telefono {
+                        width: 80%;
+                    }
+                }
+            }
+            .cajaRegion {
+                width: 100%;
+            }
+        }
+    }
     .contenedor {
         .sliderJugadores {
             .subContenedor {
