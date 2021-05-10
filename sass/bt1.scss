@@ -135,6 +135,52 @@ main {
 }
 aside {
     border: 1px solid rgb(218, 218, 218);
+    .cardClima {
+        .card-body {
+            .titulo {
+                i {
+                    margin: 0 10px;
+                    font-size: 23px;
+                    text-align: center;
+                }
+                h5 {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+            .cajaImagenClima {
+                display: none;
+                .cajaImagen {
+                    //background-color: #cbe0e9;
+                    border-radius: 10px;
+                    margin: 10px 0;
+                    img {
+                        width: 70%;
+                        margin: auto;
+                    }
+                }
+                p {
+                    text-align: center;
+                    color: #f3f3f3;
+                    font-weight: 500;
+                    font-style: italic;
+                }
+            }
+            .cajaImagenPorDefecto {
+                text-align: center;
+                i {
+                    font-size: 50px;
+                    margin: 20px 0;
+                }
+                p {
+                    text-align: center;
+                    color: #f3f3f3;
+                    font-weight: 500;
+                    font-style: italic;
+                }
+            }
+        }
+    }
     .ranking {
         background-color: #dadada;
         margin: 10px auto;

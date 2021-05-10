@@ -86,6 +86,36 @@ main {
 
 aside {
   border: 1px solid #dadada; }
+  aside .cardClima .card-body .titulo i {
+    margin: 0 10px;
+    font-size: 23px;
+    text-align: center; }
+  aside .cardClima .card-body .titulo h5 {
+    font-size: 16px;
+    text-align: center; }
+  aside .cardClima .card-body .cajaImagenClima {
+    display: none; }
+    aside .cardClima .card-body .cajaImagenClima .cajaImagen {
+      border-radius: 10px;
+      margin: 10px 0; }
+      aside .cardClima .card-body .cajaImagenClima .cajaImagen img {
+        width: 70%;
+        margin: auto; }
+    aside .cardClima .card-body .cajaImagenClima p {
+      text-align: center;
+      color: #f3f3f3;
+      font-weight: 500;
+      font-style: italic; }
+  aside .cardClima .card-body .cajaImagenPorDefecto {
+    text-align: center; }
+    aside .cardClima .card-body .cajaImagenPorDefecto i {
+      font-size: 50px;
+      margin: 20px 0; }
+    aside .cardClima .card-body .cajaImagenPorDefecto p {
+      text-align: center;
+      color: #f3f3f3;
+      font-weight: 500;
+      font-style: italic; }
   aside .ranking {
     background-color: #dadada;
     margin: 10px auto;

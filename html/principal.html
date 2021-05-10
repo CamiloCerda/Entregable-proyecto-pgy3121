@@ -175,6 +175,24 @@
                 
             </main>
             <aside class="col-12 col-lg-3 d-flex flex-column align-items-center mb-2 ">
+                <div class="card mt-2 bg-dark bg-gradient cardClima" style="width: 100%;">
+                    <div class="card-body text-light">
+                        <div class="titulo d-flex justify-content-center align-items-center">
+                            <i class="fas fa-cloud-sun-rain"></i><h5 class="card-title">Recomendaciones del señor clima</h5><i class="fas fa-temperature-high"></i>
+                        </div>
+                        <div class="cajaImagenClima">
+                            <div class="cajaImagen">
+                                <img src="" class="w-100 p-4" alt="Imagen representativa del clima" id="imgClima">
+                            </div>
+                            <p class="card-text" id="condicionesClima"></p>
+                            <p class="card-text" id="recomendacionClima"></p>
+                        </div>
+                        <div class="cajaImagenPorDefecto">
+                            <i class="fas fa-cloud-sun"></i>
+                            <p>Activa la geolocalizacion para que veas nuestras recomendaciones del clima</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="card mt-2 jugmes" style="width: 100%;">
                     <div class="card-body">
                         <div class="titulo d-flex justify-content-center">
@@ -589,5 +607,6 @@
     <script src="../bootstrap/js/popper.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../javascript/validarFormu.js"></script>
+    <script src="../javascript/clima.js"></script>
 </body>
 </html>
