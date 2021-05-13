@@ -2,7 +2,7 @@ $(document).ready(function(){
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function(position) {
             $.get({
-                url:'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+
+                url:'https://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+
                     '&lon='+position.coords.longitude+'&appid=dc89a59a3e052b0f0691ed47133e374c&units=metric', 
                 success: function(respuesta){
                     console.log(respuesta);
@@ -10,7 +10,7 @@ $(document).ready(function(){
                     $(".cajaImagenPorDefecto").css('display', 'none');
                     $(".cajaImagenClima .cajaImagen").css('backgroundColor', descripciones[respuesta.weather[0].description].color);
                     $("#cajaImagen").html('<img class="w-100 p-4" alt="Imagen representativa del clima" id="imgClima">');
-                    $("#imgClima").attr('src', 'http://openweathermap.org/img/wn/'+respuesta.weather[0].icon+'@2x.png');
+                    $("#imgClima").attr('src', 'https://openweathermap.org/img/wn/'+respuesta.weather[0].icon+'@2x.png');
                     $("#condicionesClima").text('Comuna de '+respuesta.name+', actualmente: '+respuesta.main.temp+' °C');
                     $("#recomendacionClima").text('"'+descripciones[respuesta.weather[0].description].desc+'"');
                 },
