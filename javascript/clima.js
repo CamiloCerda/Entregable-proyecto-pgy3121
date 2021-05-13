@@ -4,14 +4,12 @@ $(document).ready(function(){
             $.get({
                 url:'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+
                     '&lon='+position.coords.longitude+'&appid=dc89a59a3e052b0f0691ed47133e374c&units=metric', 
-                /* url:'http://api.openweathermap.org/data/2.5/weather?lat=64&lon=26&appid=dc89a59a3e052b0f0691ed47133e374c&units=metric', */
-                /* url:'http://api.openweathermap.org/data/2.5/weather?lat=25.7&lon=-99.2333&appid=dc89a59a3e052b0f0691ed47133e374c&units=metric', */
-                /* url:'http://api.openweathermap.org/data/2.5/weather?lat=39.5237&lon=-87.125&appid=dc89a59a3e052b0f0691ed47133e374c&units=metric', */
                 success: function(respuesta){
                     console.log(respuesta);
                     $(".cajaImagenClima").css('display', 'block');
                     $(".cajaImagenPorDefecto").css('display', 'none');
                     $(".cajaImagenClima .cajaImagen").css('backgroundColor', descripciones[respuesta.weather[0].description].color);
+                    $("#cajaImagen").html('<img class="w-100 p-4" alt="Imagen representativa del clima" id="imgClima">');
                     $("#imgClima").attr('src', 'http://openweathermap.org/img/wn/'+respuesta.weather[0].icon+'@2x.png');
                     $("#condicionesClima").text('Comuna de '+respuesta.name+', actualmente: '+respuesta.main.temp+' °C');
                     $("#recomendacionClima").text('"'+descripciones[respuesta.weather[0].description].desc+'"');
