@@ -5,7 +5,7 @@ $(document).ready(function(){
                 url:'https://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+
                     '&lon='+position.coords.longitude+'&appid=dc89a59a3e052b0f0691ed47133e374c&units=metric', 
                 success: function(respuesta){
-                    console.log(respuesta);
+                    //console.log(respuesta);
                     $(".cajaImagenClima").css('display', 'block');
                     $(".cajaImagenPorDefecto").css('display', 'none');
                     $(".cajaImagenClima .cajaImagen").css('backgroundColor', descripciones[respuesta.weather[0].description].color);
@@ -19,9 +19,8 @@ $(document).ready(function(){
                 }
             });
         });
-    } else {
-        console.log('no esta prendida la geolocalizacion');
-    }
+    } 
+    
     var descripciones = {'clear sky':{'desc':'El cielo esta despejado, ven con confianza!', 
                              'color':'#90d8ee'},
                         'few clouds':{'desc':'Trae un polerón, podría darte algo de frío', 
