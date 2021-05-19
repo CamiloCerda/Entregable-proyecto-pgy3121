@@ -19,27 +19,32 @@ $(document).ready(function(){
             //validar mail
             else if(validarMail()){
                 event.preventDefault();
+                $(".alertPreventDefault").css("display","block");
                 $("#mailFormu").addClass('fondoRojo');
                 $("#errorEmail").css("display","block");
             }
             //validar texto
             else if($("#mensajeFormu").val().length < 50) {
                 event.preventDefault();
+                $(".alertPreventDefault").css("display","block");
                 $("#mensajeFormu").addClass('fondoRojo');
                 $("#errorMensaje").css("display","block");
             }
             //validar rut
             else if(validarRut()){
                 event.preventDefault();
+                $(".alertPreventDefault").css("display","block");
             }
             //validar region 
             else if($("#region option:selected").val() == '0'){
                 event.preventDefault();
+                $(".alertPreventDefault").css("display","block");
                 $("#region").addClass('fondoRojo');
                 $("#errorRegion").css("display","block");
             }
         }else {
             event.preventDefault();
+            $(".alertPreventDefault").css("display","block");
             $("#errorTerminos").css("display","block");
         }
     });
