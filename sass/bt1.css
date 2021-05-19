@@ -20,6 +20,8 @@ header .usuario {
     font-size: 20px; }
   header .usuario i {
     margin-left: 10px; }
+header nav .container-fluid .navbar-brand {
+  width: 50px; }
 header nav .container-fluid .navbar-collapse .navbar-nav .nav-item {
   margin-right: 25px; }
   header nav .container-fluid .navbar-collapse .navbar-nav .nav-item a i {

@@ -29,6 +29,9 @@ header {
     }
     nav {
         .container-fluid {
+            .navbar-brand {
+                width: 50px;
+            }
             .navbar-collapse {
                 .navbar-nav {
                     .nav-item {
